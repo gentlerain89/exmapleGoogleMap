@@ -17,7 +17,7 @@
         }
 
         #map {
-            height: 100%;
+            height: 90vh;
             width: 100%;
         }
 
@@ -32,7 +32,7 @@
 </head>
 
 <body>
-    <div id="option-chossen" style="display: block">
+    <!-- <div id="option-chossen" style="display: block">
         <b>Start: </b>
         <select id="start">
             <option value="55 Tôn Thất Thuyết, Phường 1, Quận 4, Hồ Chí Minh, Vietnam">Quận 4</option>
@@ -46,68 +46,183 @@
             <option value="2 (Cao oc Me Linh) Ngô Đức Kế, Bến Nghé, Quận 1, Hồ Chí Minh, Vietnam">Quận 1</option>
             <option value="49 Đường số 7, Phường 7, Gò Vấp, Hồ Chí Minh, Vietnam">Gò Vấp</option>
         </select>
-    </div>
+    </div> -->
     <div id="map"></div>
     <script>
-
-        function initMap(arrayList) {
-            // Directions 
-            var directionsService = new google.maps.DirectionsService;
-            var directionsDisplay = new google.maps.DirectionsRenderer;
+        function initMap() {
+            /*
+            Create new Map LatLog based on positon
+            NAME = NEW POSITION
+            */
+            var CTC_HILTON_SG = new google.maps.LatLng(10.775, 106.706);
+            var RIC_VCC = new google.maps.LatLng(10.78, 106.707);
+            var CTC_29_NGUYEN_DINH_CHIEU = new google.maps.LatLng(10.787, 106.698);
+            var RIC_KINGDOM_101 = new google.maps.LatLng(10.776, 106.662);
+            var UNI_HA_DO_Q10 = new google.maps.LatLng(10.776, 106.679);
+            var UNI_ASIANA_TAN_PHU = new google.maps.LatLng(10.803, 106.691);
+            var CTC_TON_THAT_THUYET = new google.maps.LatLng(10.753, 106.691);
+            var CTC_DIAMOND_LOTUS = new google.maps.LatLng(10.748, 1106.677);
+            var CTC_NAM_LONG = new google.maps.LatLng(10.747, 106.655);
+            var RIC_DONG_A_LAND = new google.maps.LatLng(10.737, 106.74);
+            var RIC_PANORAMA = new google.maps.LatLng(10.737, 106.739);
+            var RIC_PAIHO = new google.maps.LatLng(10.758, 106.56);
+            var RIC_SWANPARK = new google.maps.LatLng(10.722, 106.869);
+            var FDC_WEPRO = new google.maps.LatLng(10.729, 106.72);
+            var FDC_TBS = new google.maps.LatLng(10.899, 106.823);
+            var CTC_LANCER = new google.maps.LatLng(10.777, 106.751);
+            var CTC_DIAMOND_ISLAND_2 = new google.maps.LatLng(10.779, 106.747);
+            var CTC_DAI_QUANG_MINH = new google.maps.LatLng(10.77, 106.717);
+            var FDC_SOL_VILLA = new google.maps.LatLng(10.77, 106.782);
+            var UNI_SARINA_DQM = new google.maps.LatLng(10.77, 106.718);
+            var UNI_TRUONG_HOC_DQM = new google.maps.LatLng(10.77, 106.718);
+            var CTC_L81 = new google.maps.LatLng(10.797, 106.723);
+            var UNI_PRECHE = new google.maps.LatLng(10.803, 106.746);
+            var UNI_G_HOMES = new google.maps.LatLng(10.804, 106.747);
+            var UNI_CITY_LAND_GV = new google.maps.LatLng(10.829, 106.681);
+            var CTC_GAINLUCKY = new google.maps.LatLng(11.146, 106.334);
+            var RIC_BROTEX = new google.maps.LatLng(11.152, 106.333);
+            var RIC_BILLION = new google.maps.LatLng(11.134, 106.342);
+            var FDC_GAINLUCKY = new google.maps.LatLng(11.146, 106.342);
+            var FDC_SPOWER = new google.maps.LatLng(11.029, 106.325);
+            var CTC_WORLDON = new google.maps.LatLng(10.967, 106.62);
+            var CTC_MANWAH = new google.maps.LatLng(11.043, 106.775);
+            var RIC_MANWAH = new google.maps.LatLng(11.043, 106.775);
+            var UNI_ACCREDO_BD = new google.maps.LatLng(11.156, 106.691);
+            var UNI_TETRA_PAK = new google.maps.LatLng(11.152, 106.704);
+            var UNI_EVERGREEN_BD = new google.maps.LatLng(11.112, 106.794);
+            var UNI_UNIBEN_BD = new google.maps.LatLng(11.148, 106.701);
+            var UNI_DENEAST = new google.maps.LatLng(11.074, 106.701);
+            var FDC_PAIHONG = new google.maps.LatLng(11.204, 106.719);
+            var CTC_HO_TRAM_2 = new google.maps.LatLng(10.487, 107.454);
+            var UNI_VIGLACERA = new google.maps.LatLng(10.646, 107.025);
+            var CTC_KHO_BINH_DUONG = new google.maps.LatLng(10.961, 106.733);
+            var UNI_KHO_BINH_DUONG = new google.maps.LatLng(10.965, 106.751);
+            var RIC_KHO_BINH_DUONG = new google.maps.LatLng(10.964, 106.751);
+            var FDC_KHO_LONG_AN = new google.maps.LatLng(10.799, 106.706);
+            var AN_GIA_MINH = new google.maps.LatLng(11.02604, 106.705149);
+            var VINH_CAO = new google.maps.LatLng(10.985415, 106.734732);
+            var KIM_LONG =  new google.maps.LatLng(10.942181, 106.73949);
+            var THANH_LONG_169 =  new google.maps.LatLng(10.957118, 106.734146);
+            var MINI =  new google.maps.LatLng(10.965252, 106.71582);
+            var HAI_PHUOC =  new google.maps.LatLng(10.986152, 106.779445);
+            var HUNG_VIET =  new google.maps.LatLng(10.742183, 106.54229);
+            var ANH_QUAN =  new google.maps.LatLng(10.888485, 106.781762);
+            var THAI_DUONG =  new google.maps.LatLng(10.928803, 106.602171);
+            var SAKI = new google.maps.LatLng(11.031863, 106.698491);
+            var HDC = new google.maps.LatLng(10.876708, 106.697274);
+            var SUGIKO = new google.maps.LatLng(10.670739, 106.55999);
+            var INDOCHINA = new google.maps.LatLng(10.635898, 106.660316);
+            var HAI_PHAN = new google.maps.LatLng(10.870823, 106.574199);
+            var LINH_PHONG = new google.maps.LatLng(10.624134, 106.484665);
+            var G18 = new google.maps.LatLng(10.714671, 106.574745);
+            var TTP = new google.maps.LatLng(10.716349, 106.65109);
+            
+            // Data Binding for map
+            var listData = [
+                {
+                    id: 1,
+                    content: [
+                        'UNI_CITY_LAND_GV',
+                        'CTC_DIAMOND_ISLAND_2'
+                    ],
+                    data: [
+                        UNI_CITY_LAND_GV,
+                        CTC_DIAMOND_ISLAND_2,
+                    ],
+                    color: '#4da6ff'
+                },
+                {
+                    id: 2,
+                    content: [
+                        'UNI_KHO_BINH_DUONG',
+                        'TTP'
+                    ],
+                    data: [
+                        UNI_KHO_BINH_DUONG,
+                        TTP,
+                    ],
+                    color: '#ffb31a'
+                },
+                {
+                    id: 3,
+                    content: [
+                        'THAI KHON 16/12/2018 BR OON',
+                        'FDC_GAINLUCKY 2 16/12/2018 BR OON'
+                    ],
+                    data: [
+                        new google.maps.LatLng(10.775, 106.706),
+                        new google.maps.LatLng(11.146, 106.717),
+                    ],
+                    color: '#4c00e6'
+                }
+            ];
             var map;
-            // var latDefault = { lat: 10.762622, lng: 106.660172 };
             var mapOptions = {
-                center: { lat: 10.762622, lng: 106.660172 },
+                center: { lat: 10.762622, lng: 106.660172 }, // Default TP HCM
                 zoom: 10
             };
             var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-            directionsDisplay.setMap(map);
-            // if (arrayList) {
-            //     for (var index = 0; index <= arrayList.length; index++) {
-            //         addMarker({ position: arrayList[index].position });
-            //     }
-            //     // Function Add Marker
-            //     function addMarker(props) {
-            //         var marker = new google.maps.Marker({
-            //             position: props.position,
-            //             map: map
-            //         });
-            //     }
-            // }
-            var onChangeHandler = function () {
-                calculateAndDisplayRoute(directionsService, directionsDisplay);
-            };
-            document.getElementById('start').addEventListener('change', onChangeHandler);
-            document.getElementById('end').addEventListener('change', onChangeHandler);
-        };
-        function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-            var start = document.getElementById('start').value;
-            var end = document.getElementById('end').value;
-            directionsService.route({
-                origin: start,
-                destination: end,
-                travelMode: 'DRIVING'
-            }, function (response, status) {
-                if (status === 'OK') {
-                    directionsDisplay.setDirections(response);
-                } else {
-                    window.alert('Directions request failed due to ' + status);
+
+            if (listData) {
+                for (var index = 0; index <= listData.length; index++) {
+                    var arrayPosition = listData[index];
+                    if (arrayPosition) {
+                        for (var i = 0; i <= arrayPosition.data.length; i++) {
+                            addMarker({ dataPosition: arrayPosition.data[i], title: arrayPosition.content[i] });
+                            if (arrayPosition && arrayPosition.data[i] && arrayPosition.data[i + 1]) {
+                                var distanceResult = getDistance(arrayPosition.data[i], arrayPosition.data[i + 1]);
+                                console.log(`Distance between of ${arrayPosition.content[i]} and ${arrayPosition.content[i + 1]} equal ${parseFloat((distanceResult / 1000)).toFixed(2)} KM`);
+                            }
+                        }
+                        setDrawPath({ data: arrayPosition.data, color: listData[index].color });
+                    }
                 }
-            });
-        }
-        // $(document).ready(function () {
-        //     var arrayTest = [
-        //         { id: 1, content: 'THAI KHON', position: { lat: 10.775, lng: 106.706 } },
-        //         { id: 2, content: 'THAI KHON 2', position: { lat: 10.829, lng: 106.681 } },
-        //     ];
-        //     $('#thai_khon').on('click', function () {
-        //         console.log('Click Thai');
-        //         initMap(arrayTest);
-        //     });
-        // });
 
+                // Function Add Marker
+                function addMarker(props) {
+                    var infowindow = new google.maps.InfoWindow({
+                        content: props.title
+                    });
+                    var marker = new google.maps.Marker({
+                        position: props.dataPosition,
+                        map: map,
+                        title: props.title
+                    });
+                    marker.addListener('click', function () {
+                        infowindow.open(map, marker);
+                    });
+                }
+
+                // Set Drwaw Path
+                function setDrawPath(props) {
+                    var flightPath = new google.maps.Polyline({
+                        path: props.data,
+                        geodesic: true,
+                        strokeColor: props.color,
+                        strokeOpacity: 1.0,
+                        strokeWeight: 2
+                    });
+
+                    flightPath.setMap(map);
+                }
+            }
+
+            // Calculate two point google map api
+            function rad(x) {
+                return x * Math.PI / 180;
+            };
+            function getDistance(p1, p2) {
+                var R = 6378137; // Earth’s mean radius in meter
+                var dLat = rad(p2.lat() - p1.lat());
+                var dLong = rad(p2.lng() - p1.lng());
+                var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                    Math.cos(rad(p1.lat())) * Math.cos(rad(p2.lat())) *
+                    Math.sin(dLong / 2) * Math.sin(dLong / 2);
+                var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                var d = R * c;
+                return d; // returns the distance in meter
+            };
+        };
     </script>
-
 </body>
-
 </html>
