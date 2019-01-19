@@ -27,7 +27,7 @@
     </style>
     <!-- Replace the value of the key parameter with your own API key. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClYaHufhKEO7KXrQ4iUZhB7ziIu_QoPEI&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHeLJigXlN-myXIDGKVTP2JBGEFFaRvSk&callback=initMap"
         async defer></script>
 </head>
 
@@ -401,24 +401,28 @@
                 },
             ];
             var map;
+            var directionsService = new google.maps.DirectionsService;
+            var directionsDisplay = new google.maps.DirectionsRenderer;
             var mapOptions = {
                 center: { lat: 10.762622, lng: 106.660172 }, // Default TP HCM
                 zoom: 10
             };
             var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-
+            directionsDisplay.setMap(map);
+            // Direction 
             if (listData) {
                 for (var index = 0; index <= listData.length; index++) {
-                    var arrayPosition = listData[index];
+                    var arrayPosition = listData[24];
                     if (arrayPosition) {
                         for (var i = 0; i <= arrayPosition.data.length; i++) {
                             addMarker({ dataPosition: arrayPosition.data[i], title: arrayPosition.content[i] });
-                            if (arrayPosition && arrayPosition.data[i] && arrayPosition.data[i + 1]) {
-                                var distanceResult = getDistance(arrayPosition.data[i], arrayPosition.data[i + 1]);
-                                console.log(` ${arrayPosition.content[i]} and ${arrayPosition.content[i + 1]} : ${parseFloat((distanceResult / 1000)).toFixed(2)} KM`);
-                            }
+                            // if (arrayPosition && arrayPosition.data[i] && arrayPosition.data[i + 1]) {
+                                // var startValue = arrayPosition.data[i];
+                                // var endValue = arrayPosition.data[i + 1];
+                                // calculateAndDisplayRoute(directionsService, directionsDisplay, startValue, endValue);
+                            //}
                         }
-                        setDrawPath({ data: arrayPosition.data, color: listData[index].color });
+                       setDrawPath({ data: arrayPosition.data, color: listData[12].color });
                     }
                 }
 
@@ -466,6 +470,30 @@
                 var d = R * c;
                 return d; // returns the distance in meter
             };
+        };
+        function calculateAndDisplayRoute(directionsService, directionsDisplay, startValue, endValue) {
+            console.log(startValue, endValue);
+            directionsService.route({
+                origin: startValue,
+                destination: endValue,
+                optimizeWaypoints: true,
+                travelMode: 'DRIVING'
+            }, function (response, status) {
+                if (status === 'OK') {
+                   // directionsDisplay.setDirections(response);
+                    var route = response.routes[0];
+                    for (var i = 0; i < route.legs.length; i++) {
+                        var objectResult = {
+                            start: route.legs[i].start_address,
+                            end: route.legs[i].end_address,
+                            distance: route.legs[i].distance.text
+                        };
+                        console.log(JSON.stringify(objectResult));
+                    }
+                } else {
+                    console.log(status);
+                }
+            });
         };
     </script>
 </body>
