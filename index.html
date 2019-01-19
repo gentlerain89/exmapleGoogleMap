@@ -412,7 +412,7 @@
             // Direction 
             if (listData) {
                 for (var index = 0; index <= listData.length; index++) {
-                    var arrayPosition = listData[24];
+                    var arrayPosition = listData[index];
                     if (arrayPosition) {
                         for (var i = 0; i <= arrayPosition.data.length; i++) {
                             addMarker({ dataPosition: arrayPosition.data[i], title: arrayPosition.content[i] });
@@ -422,7 +422,7 @@
                                 // calculateAndDisplayRoute(directionsService, directionsDisplay, startValue, endValue);
                             //}
                         }
-                       setDrawPath({ data: arrayPosition.data, color: listData[12].color });
+                       setDrawPath({ data: arrayPosition.data, color: listData[index].color });
                     }
                 }
 
