@@ -32,21 +32,6 @@
 </head>
 
 <body>
-    <!-- <div id="option-chossen" style="display: block">
-        <b>Start: </b>
-        <select id="start">
-            <option value="55 Tôn Thất Thuyết, Phường 1, Quận 4, Hồ Chí Minh, Vietnam">Quận 4</option>
-            <option value="2 (Cao oc Me Linh) Ngô Đức Kế, Bến Nghé, Quận 1, Hồ Chí Minh, Vietnam">Quận 1</option>
-            <option value="49 Đường số 7, Phường 7, Gò Vấp, Hồ Chí Minh, Vietnam">Gò Vấp</option>
-        </select>
-
-        <b>End: </b>
-        <select id="end">
-            <option value="55 Tôn Thất Thuyết, Phường 1, Quận 4, Hồ Chí Minh, Vietnam">Quận 4</option>
-            <option value="2 (Cao oc Me Linh) Ngô Đức Kế, Bến Nghé, Quận 1, Hồ Chí Minh, Vietnam">Quận 1</option>
-            <option value="49 Đường số 7, Phường 7, Gò Vấp, Hồ Chí Minh, Vietnam">Gò Vấp</option>
-        </select>
-    </div> -->
     <div id="map"></div>
     <script>
         function initMap() {
@@ -54,107 +39,366 @@
             Create new Map LatLog based on positon
             NAME = NEW POSITION
             */
-            var CTC_HILTON_SG = new google.maps.LatLng(10.775, 106.706);
-            var RIC_VCC = new google.maps.LatLng(10.78, 106.707);
-            var CTC_29_NGUYEN_DINH_CHIEU = new google.maps.LatLng(10.787, 106.698);
-            var RIC_KINGDOM_101 = new google.maps.LatLng(10.776, 106.662);
-            var UNI_HA_DO_Q10 = new google.maps.LatLng(10.776, 106.679);
-            var UNI_ASIANA_TAN_PHU = new google.maps.LatLng(10.803, 106.691);
-            var CTC_TON_THAT_THUYET = new google.maps.LatLng(10.753, 106.691);
-            var CTC_DIAMOND_LOTUS = new google.maps.LatLng(10.748, 1106.677);
-            var CTC_NAM_LONG = new google.maps.LatLng(10.747, 106.655);
-            var RIC_DONG_A_LAND = new google.maps.LatLng(10.737, 106.74);
-            var RIC_PANORAMA = new google.maps.LatLng(10.737, 106.739);
-            var RIC_PAIHO = new google.maps.LatLng(10.758, 106.56);
-            var RIC_SWANPARK = new google.maps.LatLng(10.722, 106.869);
-            var FDC_WEPRO = new google.maps.LatLng(10.729, 106.72);
-            var FDC_TBS = new google.maps.LatLng(10.899, 106.823);
-            var CTC_LANCER = new google.maps.LatLng(10.777, 106.751);
-            var CTC_DIAMOND_ISLAND_2 = new google.maps.LatLng(10.779, 106.747);
-            var CTC_DAI_QUANG_MINH = new google.maps.LatLng(10.77, 106.717);
-            var FDC_SOL_VILLA = new google.maps.LatLng(10.77, 106.782);
-            var UNI_SARINA_DQM = new google.maps.LatLng(10.77, 106.718);
-            var UNI_TRUONG_HOC_DQM = new google.maps.LatLng(10.77, 106.718);
-            var CTC_L81 = new google.maps.LatLng(10.797, 106.723);
-            var UNI_PRECHE = new google.maps.LatLng(10.803, 106.746);
-            var UNI_G_HOMES = new google.maps.LatLng(10.804, 106.747);
-            var UNI_CITY_LAND_GV = new google.maps.LatLng(10.829, 106.681);
-            var CTC_GAINLUCKY = new google.maps.LatLng(11.146, 106.334);
-            var RIC_BROTEX = new google.maps.LatLng(11.152, 106.333);
-            var RIC_BILLION = new google.maps.LatLng(11.134, 106.342);
-            var FDC_GAINLUCKY = new google.maps.LatLng(11.146, 106.342);
-            var FDC_SPOWER = new google.maps.LatLng(11.029, 106.325);
-            var CTC_WORLDON = new google.maps.LatLng(10.967, 106.62);
-            var CTC_MANWAH = new google.maps.LatLng(11.043, 106.775);
-            var RIC_MANWAH = new google.maps.LatLng(11.043, 106.775);
-            var UNI_ACCREDO_BD = new google.maps.LatLng(11.156, 106.691);
-            var UNI_TETRA_PAK = new google.maps.LatLng(11.152, 106.704);
-            var UNI_EVERGREEN_BD = new google.maps.LatLng(11.112, 106.794);
-            var UNI_UNIBEN_BD = new google.maps.LatLng(11.148, 106.701);
-            var UNI_DENEAST = new google.maps.LatLng(11.074, 106.701);
-            var FDC_PAIHONG = new google.maps.LatLng(11.204, 106.719);
-            var CTC_HO_TRAM_2 = new google.maps.LatLng(10.487, 107.454);
-            var UNI_VIGLACERA = new google.maps.LatLng(10.646, 107.025);
-            var CTC_KHO_BINH_DUONG = new google.maps.LatLng(10.961, 106.733);
-            var UNI_KHO_BINH_DUONG = new google.maps.LatLng(10.965, 106.751);
-            var RIC_KHO_BINH_DUONG = new google.maps.LatLng(10.964, 106.751);
-            var FDC_KHO_LONG_AN = new google.maps.LatLng(10.799, 106.706);
-            var AN_GIA_MINH = new google.maps.LatLng(11.02604, 106.705149);
-            var VINH_CAO = new google.maps.LatLng(10.985415, 106.734732);
-            var KIM_LONG =  new google.maps.LatLng(10.942181, 106.73949);
-            var THANH_LONG_169 =  new google.maps.LatLng(10.957118, 106.734146);
-            var MINI =  new google.maps.LatLng(10.965252, 106.71582);
-            var HAI_PHUOC =  new google.maps.LatLng(10.986152, 106.779445);
-            var HUNG_VIET =  new google.maps.LatLng(10.742183, 106.54229);
-            var ANH_QUAN =  new google.maps.LatLng(10.888485, 106.781762);
-            var THAI_DUONG =  new google.maps.LatLng(10.928803, 106.602171);
-            var SAKI = new google.maps.LatLng(11.031863, 106.698491);
-            var HDC = new google.maps.LatLng(10.876708, 106.697274);
-            var SUGIKO = new google.maps.LatLng(10.670739, 106.55999);
-            var INDOCHINA = new google.maps.LatLng(10.635898, 106.660316);
-            var HAI_PHAN = new google.maps.LatLng(10.870823, 106.574199);
-            var LINH_PHONG = new google.maps.LatLng(10.624134, 106.484665);
-            var G18 = new google.maps.LatLng(10.714671, 106.574745);
-            var TTP = new google.maps.LatLng(10.716349, 106.65109);
-            
+            var CTC_HILTON_SG = new google.maps.LatLng(10.775111, 106.705625);  //CTC_HILTON SG
+            var RIC_VCC = new google.maps.LatLng(10.780270, 106.707106);  //RIC_VCC
+            var CTC_29_NGUYEN_DINH_CHIEU = new google.maps.LatLng(10.787152, 106.698487); // CTC_29 NGUYỄN ĐÌNH CHIỂU
+            var RIC_KINGDOM_101 = new google.maps.LatLng(10.776014, 106.661644); //  RIC_KINGDOM 101
+            var CTC_KINHDOM_101 = new google.maps.LatLng(10.776014, 106.661644); //CTC_KINHDOM 101
+            var UNI_HA_DO_Q10 = new google.maps.LatLng(10.775569, 106.678789); //UNI_HA DO - Q10
+            var UNI_ASIANA_TAN_PHU = new google.maps.LatLng(10.803204, 106.691151); // UNI_ASIANA TÂN PHÚ
+            var CTC_TON_THAT_THUYET = new google.maps.LatLng(10.753204, 106.691478); // CTC_TÔN THẤT THUYẾT
+            var CTC_DIAMOND_LOTUS = new google.maps.LatLng(10.747967, 106.676652); //CTC_DIAMOND LOTUS
+            var CTC_NAM_LONG = new google.maps.LatLng(10.747200, 106.655281); //CTC_NAM LONG
+            var RIC_DONG_A_LAND = new google.maps.LatLng(10.737137, 106.740162); // RIC_ĐÔNG Á LAND
+            var RIC_PANORAMA = new google.maps.LatLng(10.737079, 106.739126); // RIC_PANORAMA
+            var RIC_PAIHO = new google.maps.LatLng(10.757886, 106.559830); //RIC_PAIHO
+            var RIC_SWANPARK = new google.maps.LatLng(10.722071, 106.869356); //RIC_SWANPARK
+            var FDC_WEPRO = new google.maps.LatLng(10.728891, 106.720032); //FDC_WEPRO
+            var FDC_TBS = new google.maps.LatLng(10.899482, 106.822975); //FDC_TBS
+            var CTC_LANCER = new google.maps.LatLng(10.776931, 106.750944); //CTC_LANCER
+            var CTC_DIAMOND_ISLAND_2 = new google.maps.LatLng(10.778812, 106.746785); //CTC_DIAMOND ISLAND 2
+            var CTC_DAI_QUANG_MINH = new google.maps.LatLng(10.769623, 106.716525); // CTC_ĐẠI QUANG MINH
+            var FDC_SOL_VILLA = new google.maps.LatLng(10.770324, 106.781587); //FDC_SOL VILLA
+            var UNI_SARINA_DQM = new google.maps.LatLng(10.770110, 106.718293); //UNI_SARINA - DQM
+            var UNI_TRUONG_HOC_DQM = new google.maps.LatLng(10.770110, 106.718293); // UNI_TRUONG HOC - DQM
+            var CTC_L81 = new google.maps.LatLng(10.797265, 106.723210); // CTC_L81
+            var UNI_PRECHE = new google.maps.LatLng(10.803258, 106.746398); //UNI_PRECHE
+            var UNI_G_HOMES = new google.maps.LatLng(10.804410, 106.747192); //UNI_G-HOMES
+            var UNI_CITY_LAND_GV = new google.maps.LatLng(10.828707, 106.681237); //UNI_CITY LAND GV
+            var CTC_GAINLUCKY = new google.maps.LatLng(11.146475, 106.334226); // CTC_GAINLUCKY
+            var RIC_BROTEX = new google.maps.LatLng(11.151993, 106.333445); //RIC_BROTEX
+            var RIC_BILLION = new google.maps.LatLng(11.134359, 106.342063); //RIC_BILLION
+            var FDC_GAINLUCKY = new google.maps.LatLng(11.146475, 106.342063); //FDC_GAINLUCKY
+            var FDC_SPOWER = new google.maps.LatLng(11.029153, 106.324548); //FDC_SPOWER
+            var CTC_WORLDON = new google.maps.LatLng(10.967386, 106.620298); //CTC_WORLDON
+            var CTC_MANWAH = new google.maps.LatLng(11.043342, 106.775396); //CTC_MANWAH
+            var RIC_MANWAH = new google.maps.LatLng(11.043342, 106.775396); //RIC_MANWAH
+            var UNI_ACCREDO_BD = new google.maps.LatLng(11.156103, 106.691017); // UNI_ACCREDO BD
+            var UNI_TETRA_PAK = new google.maps.LatLng(11.151790, 106.703522); // UNI_TETRA PAK
+            var UNI_EVERGREEN_BD = new google.maps.LatLng(11.112133, 106.793804); //UNI_EVERGREEN BD
+            var UNI_UNIBEN_BD = new google.maps.LatLng(11.147827, 106.700652); //UNI_UNIBEN BD
+            var UNI_DENEAST = new google.maps.LatLng(11.074495, 106.700652); //UNI_DENEAST
+            var FDC_PAIHONG = new google.maps.LatLng(11.204066, 106.718644); //FDC_PAIHONG
+            var CTC_HO_TRAM_2 = new google.maps.LatLng(10.486902, 107.453791); //CTC_HỒ TRAM 2
+            var UNI_VIGLACERA = new google.maps.LatLng(10.645728, 107.025417); //UNI_VIGLACERA
+            var CTC_KHO_BD = new google.maps.LatLng(10.961180, 106.732659); //CTC_KHO BÌNH DƯƠNG
+            var UNI_KHO_BD = new google.maps.LatLng(10.964793, 106.751463); //UNI_KHO BÌNH DƯƠNG
+            var RIC_KHO_BD = new google.maps.LatLng(10.964381, 106.750748); //RIC_KHO BÌNH DƯƠNG
+            var FDC_KHO_LA = new google.maps.LatLng(10.798609, 106.706217); //FDC_KHO LONG AN
+            var AN_GIA_MINH = new google.maps.LatLng(11.02604, 106.705149); //AN GIA MINH
+            var VINH_CAO = new google.maps.LatLng(10.985415, 106.734732); //VINH CAO
+            var KIM_LONG = new google.maps.LatLng(10.942181, 106.73949); //KIM LONG
+            var THANH_LONG_169 = new google.maps.LatLng(10.957118, 106.734146); //THÀNH LONG 169
+            var MINI = new google.maps.LatLng(10.965252, 106.71582); //MINI
+            var HAI_PHUOC = new google.maps.LatLng(10.986152, 106.779445); //HAI PHƯỚC
+            var HUNG_VIET = new google.maps.LatLng(10.742183, 106.542294); //HƯNG VIỆT
+            var ANH_QUAN = new google.maps.LatLng(10.888485, 106.781762); //ANH QUÂN
+            var THAI_DUONG = new google.maps.LatLng(10.928803, 106.602171); //THÁI DƯƠNG
+            var SAKI = new google.maps.LatLng(11.031863, 106.698491); //SAKI
+            var HDC = new google.maps.LatLng(10.876708, 106.697274); //HDC
+            var Sugiko = new google.maps.LatLng(10.670739, 106.55999); //Sugiko
+            var INDOCHINA = new google.maps.LatLng(10.635898, 106.660316); //INDOCHINA
+            var HAI_PHAN = new google.maps.LatLng(10.870823, 106.574199); //HAI PHAN
+            var LINH_PHONG = new google.maps.LatLng(10.624134, 106.484665); //LINH PHONG
+            var G18 = new google.maps.LatLng(10.714671, 106.574745); //G18
+            var TTP = new google.maps.LatLng(10.716349, 106.65109); //TTP
+            var SG_Royal = new google.maps.LatLng(10.778296, 106.699477); //SG Royal
+            var A_ABD_B_NT = new google.maps.LatLng(12.240469, 109.196441); //A&B NT
+            var Loteco = new google.maps.LatLng(10.930674, 106.885201); //Loteco
+            var Vincity_Q9 = new google.maps.LatLng(10.84011, 106.829559); //Vincity Q9
+            var HOA_PHAT_DUNG_QUAT = new google.maps.LatLng(15.366622, 108.80056); //Hoà Phát Dung Quất
+            var TIME_SQUARE_DN = new google.maps.LatLng(16.070169, 108.244953); //Times Square Đà Nẵng
+            var TIMBERLAND = new google.maps.LatLng(11.043614, 106.775133); //TIMBERLAND
             // Data Binding for map
             var listData = [
                 {
                     id: 1,
                     content: [
-                        'UNI_CITY_LAND_GV',
-                        'CTC_DIAMOND_ISLAND_2'
+                        'SG_Royal',
+                        'KIM_LONG'
                     ],
                     data: [
-                        UNI_CITY_LAND_GV,
-                        CTC_DIAMOND_ISLAND_2,
+                        SG_Royal,
+                        KIM_LONG,
                     ],
-                    color: '#4da6ff'
+                    color: '#1f5ec4'
                 },
                 {
                     id: 2,
                     content: [
-                        'UNI_KHO_BINH_DUONG',
-                        'TTP'
+                        'RIC_BILLION',
+                        'KIM LONG'
                     ],
                     data: [
-                        UNI_KHO_BINH_DUONG,
-                        TTP,
+                        RIC_BILLION,
+                        KIM_LONG,
                     ],
-                    color: '#ffb31a'
+                    color: '#0d5e72'
                 },
                 {
                     id: 3,
                     content: [
-                        'THAI KHON 16/12/2018 BR OON',
-                        'FDC_GAINLUCKY 2 16/12/2018 BR OON'
+                        'RIC_PAIHO',
+                        'KIM LONG'
                     ],
                     data: [
-                        new google.maps.LatLng(10.775, 106.706),
-                        new google.maps.LatLng(11.146, 106.717),
+                        INDOCHINA,
+                        KIM_LONG,
                     ],
-                    color: '#4c00e6'
-                }
+                    color: '#20c115'
+                },
+                {
+                    id: 4,
+                    content: [
+                        'KIM LONG',
+                        'RIC_MANWAH'
+                    ],
+                    data: [
+                        KIM_LONG,
+                        RIC_MANWAH,
+                    ],
+                    color: '#60340e'
+                },
+                {
+                    id: 5,
+                    content: [
+                        'RIC_BILLION',
+                        'RIC_KHO BÌNH DƯƠNG'
+                    ],
+                    data: [
+                        RIC_BILLION,
+                        RIC_KHO_BD,
+                    ],
+                    color: '#c4a387'
+                },
+                {
+                    id: 6,
+                    content: [
+                        'RIC_PANORAMA',
+                        'TTP'
+                    ],
+                    data: [
+                        RIC_PANORAMA,
+                        TTP,
+                    ],
+                    color: '#d3cd1d'
+                },
+                {
+                    id: 7,
+                    content: [
+                        'RIC_BROTEX',
+                        'TTP'
+                    ],
+                    data: [
+                        RIC_BROTEX,
+                        TTP,
+                    ],
+                    color: '#6e9b5d'
+                },
+                {
+                    id: 8,
+                    content: [
+                        'A&B NT',
+                        'UNI_KHO BÌNH DƯƠNG'
+                    ],
+                    data: [
+                        A_ABD_B_NT,
+                        UNI_KHO_BD,
+                    ],
+                    color: '#2c7510'
+                },
+                {
+                    id: 9,
+                    content: [
+                        'FDC_GAINLUCKY',
+                        'UNI_KHO BÌNH DƯƠNG'
+                    ],
+                    data: [
+                        FDC_GAINLUCKY,
+                        UNI_KHO_BD,
+                    ],
+                    color: '#2b775d'
+                },
+                {
+                    id: 10,
+                    content: [
+                        'UNI_HA DO - Q10',
+                        'ANH QUÂN'
+                    ],
+                    data: [
+                        UNI_HA_DO_Q10,
+                        ANH_QUAN,
+                    ],
+                    color: '#04ef9f'
+                },
+                {
+                    id: 11,
+                    content: [
+                        'UNI_KHO BÌNH DƯƠNG',
+                        'Loteco'
+                    ],
+                    data: [
+                        UNI_KHO_BD,
+                        Loteco,
+                    ],
+                    color: '#13405e'
+                },
+                {
+                    id: 12,
+                    content: [
+                        'UNI_PRECHE',
+                        'UNI_KHO BÌNH DƯƠNG'
+                    ],
+                    data: [
+                        UNI_PRECHE,
+                        UNI_KHO_BD,
+                    ],
+                    color: '#a82b8f'
+                },
+                {
+                    id: 13,
+                    content: [
+                        'UNI_HA DO - Q10',
+                        'Vincity Q9'
+                    ],
+                    data: [
+                        UNI_HA_DO_Q10,
+                        Vincity_Q9,
+                    ],
+                    color: '#660652'
+                },
+                {
+                    id: 14,
+                    content: [
+                        'UNI_KHO BÌNH DƯƠNG',
+                        'Vincity Q9'
+                    ],
+                    data: [
+                        UNI_KHO_BD,
+                        Vincity_Q9,
+                    ],
+                    color: '#d30e60'
+                },
+                {
+                    id: 15,
+                    content: [
+                        'UNI_KHO BÌNH DƯƠNG',
+                        'CTC_MANWAH'
+                    ],
+                    data: [
+                        UNI_KHO_BD,
+                        CTC_MANWAH,
+                    ],
+                    color: '#3d031b'
+                },
+                {
+                    id: 16,
+                    content: [
+                        'Hà Đô',
+                        'CTC_MANWAH'
+                    ],
+                    data: [
+                        UNI_HA_DO_Q10,
+                        CTC_MANWAH,
+                    ],
+                    color: '#d10e1b'
+                },
+                {
+                    id: 17,
+                    content: [
+                        'Sugiko',
+                        'Vincity Q9'
+                    ],
+                    data: [
+                        Sugiko,
+                        Vincity_Q9,
+                    ],
+                    color: '#144c28'
+                },
+                {
+                    id: 18,
+                    content: [
+                        'RIC_BILLION',
+                        'UNI_KHO BÌNH DƯƠNG'
+                    ],
+                    data: [
+                        RIC_BILLION,
+                        UNI_KHO_BD,
+                    ],
+                    color: '#58916c'
+                },
+                {
+                    id: 19,
+                    content: [
+                        'CTC_KHO BÌNH DƯƠNG',
+                        'CTC_ĐẠI QUANG MINH'
+                    ],
+                    data: [
+                        CTC_KHO_BD,
+                        CTC_DAI_QUANG_MINH,
+                    ],
+                    color: '#877b16'
+                },
+                {
+                    id: 20,
+                    content: [
+                        'CTC_KHO BÌNH DƯƠNG',
+                        'CTC_KINHDOM 101'
+                    ],
+                    data: [
+                        CTC_KHO_BD,
+                        CTC_KINHDOM_101,
+                    ],
+                    color: '#3c04cc'
+                },
+                {
+                    id: 21,
+                    content: [
+                        'CTC_DIAMOND LOTUS',
+                        'CTC_MANWAH'
+                    ],
+                    data: [
+                        CTC_DIAMOND_LOTUS,
+                        CTC_MANWAH,
+                    ],
+                    color: '#08011c'
+                },
+                {
+                    id: 22,
+                    content: [
+                        'ANH QUÂN',
+                        'CTC_29 NGUYỄN ĐÌNH CHIỂU'
+                    ],
+                    data: [
+                        ANH_QUAN,
+                        CTC_29_NGUYEN_DINH_CHIEU,
+                    ],
+                    color: '#ad58ce'
+                },
+                {
+                    id: 23,
+                    content: [
+                        'Hoà Phát Dung Quất',
+                        'CTC_KHO BÌNH DƯƠNG'
+                    ],
+                    data: [
+                        HOA_PHAT_DUNG_QUAT,
+                        CTC_KHO_BD,
+                    ],
+                    color: '#50056d'
+                },
+                {
+                    id: 24,
+                    content: [
+                        'TTP',
+                        'TIMBERLAND'
+                    ],
+                    data: [
+                        TTP,
+                        TIMBERLAND,
+                    ],
+                    color: '#b091bc'
+                },
             ];
             var map;
             var mapOptions = {
@@ -171,7 +415,7 @@
                             addMarker({ dataPosition: arrayPosition.data[i], title: arrayPosition.content[i] });
                             if (arrayPosition && arrayPosition.data[i] && arrayPosition.data[i + 1]) {
                                 var distanceResult = getDistance(arrayPosition.data[i], arrayPosition.data[i + 1]);
-                                console.log(`Distance between of ${arrayPosition.content[i]} and ${arrayPosition.content[i + 1]} equal ${parseFloat((distanceResult / 1000)).toFixed(2)} KM`);
+                                console.log(` ${arrayPosition.content[i]} and ${arrayPosition.content[i + 1]} : ${parseFloat((distanceResult / 1000)).toFixed(2)} KM`);
                             }
                         }
                         setDrawPath({ data: arrayPosition.data, color: listData[index].color });
@@ -225,4 +469,5 @@
         };
     </script>
 </body>
+
 </html>
