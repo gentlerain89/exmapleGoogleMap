@@ -115,7 +115,7 @@
                     id: 1,
                     content: [
                         'SG_Royal',
-                        'KIM_LONG'
+                        'KIM LONG'
                     ],
                     data: [
                         SG_Royal,
@@ -417,10 +417,10 @@
                         for (var i = 0; i <= arrayPosition.data.length; i++) {
                             addMarker({ dataPosition: arrayPosition.data[i], title: arrayPosition.content[i] });
                             // if (arrayPosition && arrayPosition.data[i] && arrayPosition.data[i + 1]) {
-                                // var startValue = arrayPosition.data[i];
-                                // var endValue = arrayPosition.data[i + 1];
-                                // calculateAndDisplayRoute(directionsService, directionsDisplay, startValue, endValue);
-                            //}
+                            //     var startValue = arrayPosition.data[i];
+                            //     var endValue = arrayPosition.data[i + 1];
+                            //     calculateAndDisplayRoute(directionsService, directionsDisplay, startValue, endValue ,arrayPosition.content[i] , arrayPosition.content[i+1]);
+                            // }
                         }
                        setDrawPath({ data: arrayPosition.data, color: listData[index].color });
                     }
@@ -471,7 +471,7 @@
                 return d; // returns the distance in meter
             };
         };
-        function calculateAndDisplayRoute(directionsService, directionsDisplay, startValue, endValue) {
+        function calculateAndDisplayRoute(directionsService, directionsDisplay, startValue, endValue, address1, address2) {
             console.log(startValue, endValue);
             directionsService.route({
                 origin: startValue,
@@ -484,8 +484,8 @@
                     var route = response.routes[0];
                     for (var i = 0; i < route.legs.length; i++) {
                         var objectResult = {
-                            start: route.legs[i].start_address,
-                            end: route.legs[i].end_address,
+                            start: address1,
+                            end: route.legs[i].address2,
                             distance: route.legs[i].distance.text
                         };
                         console.log(JSON.stringify(objectResult));

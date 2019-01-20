@@ -1,122 +1,122 @@
 [
     {
-        "start": "84 Nguyễn Du, Bến Nghé, Quận 1, Hồ Chí Minh, Vietnam",
-        "end": "Đường51, p phú tân thủ, An Phú, Thuận An, Bình Dương, Vietnam",
+        "start": "SG_Royal",
+        "end": "KIM_LONG",
         "distance": "22.5 km"
     },
     {
-        "start": "lô 43-16 Đuong N14 kcn xa phuoc Đông xa, Phước Đông, Gò Dầu, Tây Ninh, Vietnam",
-        "end": "Đường51, p phú tân thủ, An Phú, Thuận An, Bình Dương, Vietnam",
+        "start": "RIC_BILLION",
+        "end": "KIM LONG",
         "distance": "64.5 km"
     },
     {
-        "start": "Tân Kim, Cần Giuộc, Long An, Vietnam",
-        "end": "Đường51, p phú tân thủ, An Phú, Thuận An, Bình Dương, Vietnam",
+        "start": "RIC_PAIHO",
+        "end": "KIM LONG",
         "distance": "45.0 km"
     },
     {
-        "start": "Đường51, p phú tân thủ, An Phú, Thuận An, Bình Dương, Vietnam",
-        "end": "越南, Khánh Bình, Tân Uyên, Bình Dương, Vietnam",
+        "start": "KIM LONG",
+        "end": "RIC_MANWAH",
         "distance": "14.2 km"
     },
     {
-        "start": "lô 43-16 Đuong N14 kcn xa phuoc Đông xa, Phước Đông, Gò Dầu, Tây Ninh, Vietnam",
-        "end": "92 Liên Huyện, An Phú, Thuận An, Bình Dương, Vietnam",
+        "start": "RIC_BILLION",
+        "end": "RIC_KHO BÌNH DƯƠNG",
         "distance": "66.2 km"
     },
     {
-        "start": "343 Đường Đào Trí, Phú Thuận, Quận 7, Hồ Chí Minh, Vietnam",
-        "end": "Nguyễn Văn Linh, Bình Hưng, Bình Chánh, Hồ Chí Minh, Vietnam",
+        "start": "RIC_PANORAMA",
+        "end": "TTP",
         "distance": "11.1 km"
     },
     {
-        "start": "Unnamed Road, Đôn Thuận, Gò Dầu, Tây Ninh, Vietnam",
-        "end": "Nguyễn Văn Linh, Bình Hưng, Bình Chánh, Hồ Chí Minh, Vietnam",
+        "start": "RIC_BROTEX",
+        "end": "TTP",
         "distance": "85.6 km"
     },
     {
-        "start": "44 Trần Phú, Lộc Thọ, Thành phố Nha Trang, Khánh Hòa 650000, Vietnam",
-        "end": "Chợ Phú An, Đường, Liên Huyện, An Phú, Thuận An, Bình Dương, Vietnam",
+        "start": "A&B NT",
+        "end": "UNI_KHO BÌNH DƯƠNG",
         "distance": "414 km"
     },
     {
-        "start": "Unnamed Road, Đôn Thuận, Gò Dầu, Tây Ninh, Vietnam",
-        "end": "Chợ Phú An, Đường, Liên Huyện, An Phú, Thuận An, Bình Dương, Vietnam",
+        "start": "FDC_GAINLUCKY",
+        "end": "UNI_KHO BÌNH DƯƠNG",
         "distance": "67.4 km"
     },
     {
-        "start": "285/F1/1BIS Tổ Cách Mạng Tháng 8, Khu phố 26, Phường 12, Quận 10, Hồ Chí Minh, Vietnam",
-        "end": "637/12, Tân Hòa, Đông Hoà, Dĩ An, Bình Dương, Vietnam",
+        "start": "UNI_HA DO - Q10",
+        "end": "ANH QUÂN",
         "distance": "19.2 km"
     },
     {
-        "start": "Chợ Phú An, Đường, Liên Huyện, An Phú, Thuận An, Bình Dương, Vietnam",
-        "end": "Đường 6, Long Bình, Thành phố Biên Hòa, Đồng Nai, Vietnam",
+        "start": "UNI_KHO BÌNH DƯƠNG",
+        "end": "Loteco",
         "distance": "21.0 km"
     },
     {
-        "start": "2 Lê Thước, An Phú, Quận 2, Hồ Chí Minh, Vietnam",
-        "end": "Chợ Phú An, Đường, Liên Huyện, An Phú, Thuận An, Bình Dương, Vietnam",
+        "start": "UNI_PRECHE",
+        "end": "UNI_KHO BÌNH DƯƠNG",
         "distance": "26.6 km"
     },
     {
-        "start": "285/F1/1BIS Tổ Cách Mạng Tháng 8, Khu phố 26, Phường 12, Quận 10, Hồ Chí Minh, Vietnam",
-        "end": "603 Nguyễn Xiển, Long Thạnh Mỹ, Quận 9, Hồ Chí Minh, Vietnam",
+        "start": "UNI_HA DO - Q10",
+        "end": "Vincity Q9",
         "distance": "22.7 km"
     },
     {
-        "start": "Chợ Phú An, Đường, Liên Huyện, An Phú, Thuận An, Bình Dương, Vietnam",
-        "end": "603 Nguyễn Xiển, Long Thạnh Mỹ, Quận 9, Hồ Chí Minh, Vietnam",
+        "start": "UNI_KHO BÌNH DƯƠNG",
+        "end": "Vincity Q9",
         "distance": "20.7 km"
     },
     {
-        "start": "Chợ Phú An, Đường, Liên Huyện, An Phú, Thuận An, Bình Dương, Vietnam",
-        "end": "越南, Khánh Bình, Tân Uyên, Bình Dương, Vietnam",
+        "start": "UNI_KHO BÌNH DƯƠNG",
+        "end": "CTC_MANWAH",
         "distance": "11.3 km"
     },
     {
-        "start": "285/F1/1BIS Tổ Cách Mạng Tháng 8, Khu phố 26, Phường 12, Quận 10, Hồ Chí Minh, Vietnam",
-        "end": "越南, Khánh Bình, Tân Uyên, Bình Dương, Vietnam",
+        "start": "Hà Đô",
+        "end": "CTC_MANWAH",
         "distance": "41.2 km"
     },
     {
-        "start": "ĐH10, Bình Chánh, Hồ Chí Minh, Vietnam",
-        "end": "603 Nguyễn Xiển, Long Thạnh Mỹ, Quận 9, Hồ Chí Minh, Vietnam",
+        "start": "Sugiko",
+        "end": "Vincity Q9",
         "distance": "40.3 km"
     },
     {
-        "start": "lô 43-16 Đuong N14 kcn xa phuoc Đông xa, Phước Đông, Gò Dầu, Tây Ninh, Vietnam",
-        "end": "Chợ Phú An, Đường, Liên Huyện, An Phú, Thuận An, Bình Dương, Vietnam",
+        "start": "RIC_BILLION",
+        "end": "UNI_KHO BÌNH DƯƠNG",
         "distance": "66.3 km"
     },
     {
-        "start": "An Phú 24, An Phú, Thuận An, Bình Dương, Vietnam",
-        "end": "Cầu Số 15, Unnamed Road, Quận 2, Hồ Chí Minh, Vietnam",
+        "start": "CTC_KHO BÌNH DƯƠNG",
+        "end": "CTC_ĐẠI QUANG MINH",
         "distance": "25.0 km"
     },
     {
-        "start": "An Phú 24, An Phú, Thuận An, Bình Dương, Vietnam",
-        "end": "350 Tô Hiến Thành, Phường 14, Quận 10, Hồ Chí Minh, Vietnam",
+        "start": "CTC_KHO BÌNH DƯƠNG",
+        "end": "CTC_KINHDOM 101",
         "distance": "28.1 km"
     },
     {
-        "start": "49 Lê Quang Kim, Phường 8, Quận 8, Hồ Chí Minh 700900, Vietnam",
-        "end": "越南, Khánh Bình, Tân Uyên, Bình Dương, Vietnam",
+        "start": "4CTC_DIAMOND LOTUS",
+        "end": "CTC_MANWAH",
         "distance": "48.6 km"
     },
     {
-        "start": "637/12, Tân Hòa, Đông Hoà, Dĩ An, Bình Dương, Vietnam",
-        "end": "29 Nguyễn Đình Chiểu, Đa Kao, Quận 1, Hồ Chí Minh, Vietnam",
+        "start": "ANH QUÂN",
+        "end": "CTC_29 NGUYỄN ĐÌNH CHIỂU",
         "distance": "17.1 km"
     },
     {
-        "start": "Unnamed Road, Bình Đông, Bình Sơn, Quảng Ngãi, Vietnam",
-        "end": "An Phú 24, An Phú, Thuận An, Bình Dương, Vietnam",
+        "start": "Hoà Phát Dung Quất",
+        "end": "CTC_KHO BÌNH DƯƠNG",
         "distance": "834 km"
     },
     {
-        "start": "Nguyễn Văn Linh, Bình Hưng, Bình Chánh, Hồ Chí Minh, Vietnam",
-        "end": "越南, Khánh Bình, Tân Uyên, Bình Dương, Vietnam",
+        "start": "TTP",
+        "end": "TIMBERLAND",
         "distance": "58.3 km"
     }
 ]
